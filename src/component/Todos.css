@@ -1,3 +1,21 @@
 .todosbutton {
-  margin-top: -7px;
+  margin-top: -40px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+input.inputtype[type="text"] {
+  width: 65%;
+  display: flex;
+  outline: none;
+  border-bottom: none;
+}
+
+@media (min-width: 800px) {
+  .input.inputtype[type="text"] {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    outline: none;
+  }
 }

@@ -7,10 +7,14 @@ function Home() {
     {
       id: 1,
       content: 'buy some Milk',
+      complete: false,
+      readonly: true,
     },
     {
       id: 2,
       content: 'Play mario kart',
+      complete: false,
+      readonly: true,
     },
   ]);
   const deleteTodo = (id) => {
@@ -24,7 +28,7 @@ function Home() {
   return (
     <div className="container">
       <h1 className="center teal-text">Todo,s</h1>
-      <Todos todos={todos} deleteTodo={deleteTodo} />
+      <Todos todos={todos} deleteTodo={deleteTodo} setTodos={setTodos} />
       <AddForm AddTodo={AddTodo} />
     </div>
   );
