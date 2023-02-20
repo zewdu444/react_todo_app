@@ -5,10 +5,17 @@
 }
 
 input.inputtype[type="text"] {
+  margin-left: 30px;
   width: 65%;
   display: flex;
   outline: none;
   border-bottom: none;
+}
+
+input.inputcheckbox[type="checkbox"] {
+  margin-top: 20px;
+  opacity: 100;
+  pointer-events: fill;
 }
 
 @media (min-width: 800px) {
