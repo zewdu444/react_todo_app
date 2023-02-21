@@ -6,7 +6,7 @@ import About from './component/About';
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename="https://github.com/zewdu444/react_todo_app">
       <div className="todo-app">
         <NavBar />
         <Routes>
