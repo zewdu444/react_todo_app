@@ -1,22 +1,16 @@
 import React, { useState } from 'react';
 import AddForm from './AddForm';
+import LocalStorage from './LocalStorage';
 import Todos from './Todos';
 
 function Home() {
-  const [todos, setTodos] = useState([
-    {
-      id: 1,
-      content: 'buy some Milk',
-      complete: false,
-      readonly: true,
-    },
-    {
-      id: 2,
-      content: 'Play mario kart',
-      complete: false,
-      readonly: true,
-    },
-  ]);
+  function getInitialTodos() {
+    // getting stored items
+    const temp = localStorage.getItem('todos');
+    const savedTodos = JSON.parse(temp);
+    return savedTodos || [];
+  }
+  const [todos, setTodos] = useState(getInitialTodos());
   const deleteTodo = (id) => {
     setTodos((Todos) => Todos.filter((todo) => todo.id !== id));
   };
@@ -27,9 +21,11 @@ function Home() {
   };
   return (
     <div className="container">
+      <LocalStorage todos={todos} />
       <h1 className="center teal-text">Todo,s</h1>
-      <Todos todos={todos} deleteTodo={deleteTodo} setTodos={setTodos} />
       <AddForm AddTodo={AddTodo} />
+      <Todos todos={todos} deleteTodo={deleteTodo} setTodos={setTodos} />
+
     </div>
   );
 }
