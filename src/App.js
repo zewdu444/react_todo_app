@@ -6,7 +6,7 @@ import About from './component/About';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className="todo-app">
         <NavBar />
         <Routes>
