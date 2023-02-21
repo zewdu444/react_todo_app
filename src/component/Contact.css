@@ -1,0 +1,14 @@
+.profileimage {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card > .profileimage > img {
+  border-radius: 50%;
+}
+
+.cardpos {
+  margin-left: auto;
+  margin-right: auto;
+}

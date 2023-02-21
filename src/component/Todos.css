@@ -1,0 +1,28 @@
+.todosbutton {
+  margin-top: -40px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+input.inputtype[type="text"] {
+  margin-left: 30px;
+  width: 70%;
+  display: flex;
+  outline: none;
+  border-bottom: none;
+}
+
+input.inputcheckbox[type="checkbox"] {
+  margin-top: 20px;
+  opacity: 100;
+  pointer-events: fill;
+}
+
+@media (min-width: 800px) {
+  .input.inputtype[type="text"] {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    outline: none;
+  }
+}
