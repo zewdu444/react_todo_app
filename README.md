@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h3><b>Math magicians</b></h3>
+  <h3><b>Todo list application</b></h3>
 
 </div>
 
@@ -26,9 +26,9 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 Math Magicians <a name="about-project"></a>
+# 📖 Todo list <a name="about-project"></a>
 
-<p> This project is a single-page application that uses the React framework to perform a simple basic calculator. It is a part of the Microverse React module.</p>
+<p> This repository is a single-page application built with React that can be used to build to-do lists and conduct other operations like create, read, update, and delete. It also has a variety of routing pages.</p>
 
 ## 🛠 Built With <a name="built-with"> </a>
 
@@ -40,10 +40,11 @@
 
 ### Key Features <a name="key-features"></a>
 
- <li>Setup react project folder</li>
-  <li>Calculator Layout</li>
-  <li>Basic functionality</li>
-
+ <li>Todo list Navigation</li>
+  <li>Creat todo</li>
+  <li>Update todo</li>
+  <li>Delete todo</li>
+  <li>Add todo</li>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p><!-- LIVE DEMO -->
 
@@ -57,14 +58,14 @@
 
 to run on your localhost clone the project to local folder
 
-> <p>cd Math_magicians</p>
+> <p>cd react_todo_app</p>
 > <p>npm i</p>
 > <p> npm start<p>
 
 ### Setup
 
-> <p> git clone https://github.com/zewdu444/math_magicians.git</p>
-> cd math_magicians
+> <p> git clone https://github.com/zewdu444/react_todo_app.git</p>
+> cd react_todo_app
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -98,13 +99,13 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Add router for navigation
+> Deployment
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/zewdu444/math_magicians/issues).
+Feel free to check the [issues page](https://github.com/zewdu444/react_todo_app/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
